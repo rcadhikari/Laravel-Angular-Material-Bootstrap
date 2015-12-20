@@ -1,0 +1,148 @@
+body {
+  background: #CADFF4;
+  color: #171D29;
+}
+
+body .container {
+  background-color: #fff;
+}
+
+header {
+  background-color: #fff;
+  color: #171D29;
+}
+
+header .header_h1 {
+  font-size: 22px;
+}
+
+header .navbar-brand .logo {
+  margin-top: -13px;
+  width: 180px;
+}
+
+header .navbar-brand-branch .branch-logo {
+  margin-top: 10px;
+  width: 130px;
+}
+
+header .navbar {
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #CADFF4;
+  background-color: #fff !important;
+}
+
+header .navbar .container-fluid {
+  background-color: #fff !important;
+}
+
+header .navbar .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.p1-welcome-panel {
+  max-width: 460px;
+  align: center;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e3436;
+}
+
+footer {
+  border-top: 1px solid #CADFF4;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #595959;
+}
+
+/* Class and ngClass */
+
+.css-class-add,
+.css-class-remove {
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+
+.css-class,
+.css-class-add.css-class-add-active {
+  color: red;
+  font-size: 3em;
+}
+
+.css-class-remove.css-class-remove-active {
+  font-size: 1.0em;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  color: #000;
+}
+
+.animate-enter,
+.animate-leave {
+  transition: 500ms ease-in all;
+  position: relative;
+  display: block;
+}
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+  left: 0;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+  left: 500px;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-toggle {
+    border: 1px solid transparent !important;
+    border-color: #ddd !important;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888 !important;
+  }
+
+  .navbar-brand .logo {
+    margin-left: -15px;
+    margin-top: -10px !important;
+    width: 150px !important;
+  }
+
+  .navbar-brand-branch .branch-logo {
+    float: right;
+    margin-right: 50px;
+    margin-top: -40px !important;
+    width: 80px !important;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: #9BBAC6;
+}
+
+.footer_list ul li {
+  list-style: disc;
+  color: #006F6F;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}

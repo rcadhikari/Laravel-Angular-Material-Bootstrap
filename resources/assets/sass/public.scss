@@ -1,0 +1,112 @@
+$h1_size: 22px;
+$h2_size: 20px;
+$h3_size: 18px;
+$h4_size: 16px;
+$h5_size: 14px;
+
+body {
+  background: $themeBgColor;
+  color: $themeTxtColor;
+
+ .container {
+   background-color: $mainBodyColor;
+ }
+}
+
+// For header
+header {
+  background-color: $headerBgColor;
+  color: $headerTxtColor;
+
+  .header {
+  }
+
+  .header_h1 {
+    font-size: $h1_size;
+  }
+  .navbar-brand .logo {
+    margin-top: -13px;
+    width: 180px;
+  }
+
+  .navbar-brand-branch .branch-logo {
+    margin-top: 10px;
+    width: 130px;
+  }
+
+  .navbar {
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid $headerBorderColor;
+    background-color: $headerBgColor !important;
+
+    .container-fluid {
+      background-color: $headerBgColor !important;
+    }
+  }
+  .navbar .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+// Welcome page
+.p1-welcome-panel {
+  max-width: 460px;
+  align: center;
+
+  .panel-body {
+
+  }
+}
+
+// Body
+.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e3436;
+}
+
+// For Footer
+footer {
+  border-top: 1px solid $headerBorderColor;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: $dimTxtColor;
+}
+
+
+/* Class and ngClass */
+.css-class-add, .css-class-remove {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.css-class,
+.css-class-add.css-class-add-active {
+  color: red;
+  font-size:3em;
+}
+
+.css-class-remove.css-class-remove-active {
+  font-size:1.0em;
+  color:black;
+}
+
+// Search Text
+li{list-style: none; }
+h3{color: #000;}
+.animate-enter, .animate-leave {
+  transition: 500ms ease-in all;
+  position: relative;
+  display: block;
+}
+.animate-enter.animate-enter-active, .animate-leave {
+  left: 0;
+}
+.animate-leave.animate-leave-active, .animate-enter {
+  left: 500px;
+}

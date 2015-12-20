@@ -1,0 +1,29 @@
+// Extra small/mobile devices
+@media (max-width: 768px){
+
+  // For the Navigation menu
+  .navbar-default {
+    .navbar-toggle {
+      border: 1px solid transparent !important;
+      border-color: #ddd !important;
+
+      .icon-bar {
+        background-color: #888 !important;
+      }
+    }
+  }
+
+  .navbar-brand .logo {
+    margin-left: -15px;
+    margin-top: -10px !important;
+    width: 150px !important;
+  }
+
+  .navbar-brand-branch .branch-logo {
+    float: right;
+    margin-right: 50px;
+    margin-top: -40px !important;
+    width: 80px !important;
+  }
+
+}
